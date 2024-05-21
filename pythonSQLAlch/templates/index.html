@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+ 
+{% block content %}
+{% for u in list %}
+<li>id: {{u.id}}, email: {{u.email}}</p>
+         <ul>
+         <li>Имя: {{u.pr.name}}</li>
+         <li>Возраст: {{u.pr.old}}</li>
+         <li>Город: {{u.pr.city}}</li>
+         </ul>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
